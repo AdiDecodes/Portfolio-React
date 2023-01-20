@@ -1,0 +1,60 @@
+.about-me {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0 9rem 0 9rem;
+}
+
+.ab-leftheading {
+  font-size: 3rem;
+  font-family: "Unbounded", cursive;
+  color: #dedede;
+  margin: 5rem 0 2rem 0;
+}
+
+.ab-des {
+  font-size: 1.7rem;
+  color: #dedede;
+  margin: 5rem 0 0 0;
+}
+
+.profile-card {
+  background-color: #dedede;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 20rem;
+  margin: 1.2rem 0 1.2rem 0;
+  transition: 0.5s ease-in-out;
+}
+
+.profile-card:hover {
+  transition: 0.5s ease-in-out;
+  transform: scale(1.2);
+}
+
+.profile-card > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rem;
+  display: block;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.profile-container-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.profile-container-right > h4 {
+  color: #dedede;
+  font-size: 2rem;
+  font-family: "karla", sans-serif;
+  margin: 0 0 1rem 5rem;
+}

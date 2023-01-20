@@ -1,0 +1,144 @@
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+  border-top: 1px solid #3c3434;
+  background-image: linear-gradient(to right, #000000, #3c3434);
+}
+
+.footer-innerdiv {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 11rem;
+  margin-top: 4rem;
+}
+
+.footer-innerdiv h1 {
+  text-align: left;
+  color: white;
+  font-family: "Karla", sans-serif;
+  margin-bottom: 0.2rem;
+}
+
+.socials svg {
+  margin: 2rem 2rem 1rem 0;
+  font-size: 1.7rem;
+  color: white;
+  transition: 0.3s ease-in-out all;
+}
+
+.socials svg:hover {
+  color: rgb(72, 115, 255);
+  transition: 0.3s ease-in-out all;
+  transform: scale(1.5);
+}
+
+.footer-last {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sign p {
+  font-size: 1.2rem;
+  font-family: "Karla", sans-serif;
+  color: #dedede;
+}
+
+.sign > img {
+  filter: brightness(0) invert(1);
+  margin-bottom: 0.5rem;
+}
+
+.sign {
+  display: grid;
+  place-items: center;
+  margin-right: 11rem;
+  height: 102px;
+  width: 261px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #3c3434;
+    background-image: linear-gradient(to right, #000000, #3c3434);
+    height: 100%;
+  }
+
+  .footer-innerdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .footer-innerdiv h1 {
+    text-align: left;
+    color: white;
+    font-family: "Karla", sans-serif;
+    margin-bottom: 0.2rem;
+    margin-top: 2rem;
+  }
+
+  .socials svg {
+    margin: 2rem 1.2rem 2rem 1.2rem;
+    font-size: 1.8rem;
+    color: white;
+    transition: 0.3s ease-in-out all;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    text-align: center;
+    font-size: 0.2rem;
+  }
+
+  .socials svg:hover {
+    color: rgb(72, 115, 255);
+    transition: 0.3s ease-in-out all;
+    transform: scale(1.5);
+  }
+
+  .footer-last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sign p {
+    font-size: 1.2rem;
+    font-family: "Karla", sans-serif;
+    color: #dedede;
+  }
+
+  .sign > img {
+    filter: brightness(0) invert(1);
+    margin-bottom: 0.5rem;
+    display: none;
+  }
+
+  .sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    height: 102px;
+    width: 261px;
+  }
+}
