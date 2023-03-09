@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsInstagram } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
@@ -6,13 +6,22 @@ import { AiOutlineMail } from "react-icons/ai";
 import "./App.css";
 import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({ duration: 750, easing: "ease-in-out" });
+  }, []);
   return (
     <>
       <div className="primary">
         <div className="primaryContainer">
-          <div className="primaryleft">
+          <div
+            className="primaryleft"
+            data-aos="slide-right"
+            data-aos-once="true"
+          >
             <div>HEY THERE, I AM</div>
             <span className="span-name">
               <Typewriter
@@ -35,16 +44,34 @@ const Home = () => {
           <div className="primaryright">
             <div className="innernav">
               <Link to="/aboutme">
-                <div className="textsection">ABOUT ME</div>
+                <div
+                  className="textsection"
+                  data-aos="slide-left"
+                  data-aos-once="true"
+                >
+                  ABOUT ME
+                </div>
               </Link>
               <Link to="/contact">
-                <div className="textsection">CONTACT</div>
+                <div
+                  className="textsection"
+                  data-aos="slide-left"
+                  data-aos-once="true"
+                >
+                  CONTACT
+                </div>
               </Link>
               <Link to="/project">
-                <div className="textsection">PROJECTS</div>
+                <div
+                  className="textsection"
+                  data-aos="slide-left"
+                  data-aos-once="true"
+                >
+                  PROJECTS
+                </div>
               </Link>
             </div>
-            <div className="footer-1">
+            <div className="footer-1" data-aos="slide-up" data-aos-once="true">
               <div>
                 <a href="https://github.com/AdiDecodes" target="!blank">
                   <AiFillGithub style={{ fontSize: "2.3rem" }} />

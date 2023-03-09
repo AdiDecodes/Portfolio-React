@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./main.css";
 import { BsFillArrowUpRightSquareFill } from "react-icons/bs";
@@ -6,7 +6,13 @@ import cs from "../../assets/cleverstudio.png";
 import sb from "../../assets/superbattle.png";
 import sc from "../../assets/skycloud.png";
 import vz from "../../assets/vidzy.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Work = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <>
       <div className="mainHeader">
@@ -26,7 +32,7 @@ const Work = () => {
         <div className="work-subheading">
           These are some of the projects I've created, Have A Look!
         </div>
-        <div className="work-container">
+        <div className="work-container" data-aos="fade-up" data-aos-once="true">
           <div className="work-cardimg">
             <img src={vz} alt="" />
           </div>
@@ -57,7 +63,7 @@ const Work = () => {
             </a>
           </div>
         </div>
-        <div className="work-container">
+        <div className="work-container" data-aos="fade-up" data-aos-once="true">
           <div className="work-cardimg">
             <img src={sc} alt="" />
           </div>
@@ -92,7 +98,7 @@ const Work = () => {
             </a>
           </div>
         </div>
-        <div className="work-container">
+        <div className="work-container" data-aos="fade-up" data-aos-once="true">
           <div className="work-cardimg">
             <img src={cs} alt="" />
           </div>
@@ -120,7 +126,7 @@ const Work = () => {
             </a>
           </div>
         </div>
-        <div className="work-container">
+        <div className="work-container" data-aos="fade-up" data-aos-once="true">
           <div className="work-cardimg">
             <img src={sb} alt="" />
           </div>

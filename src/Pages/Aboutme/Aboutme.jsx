@@ -8,7 +8,13 @@ import { IoLogoHtml5 } from "react-icons/io";
 import { FaJava } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
 import { useNavigate } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Aboutme = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1500 });
+  }, []);
   let navigate = useNavigate();
   return (
     <>
@@ -25,20 +31,22 @@ const Aboutme = () => {
         </div>
       </div>
       <div className="about-me">
-        <div className="ab-leftheading">About Me</div>
+        <div className="ab-leftheading" data-aos="fade-up" data-aos-once="true">
+          About Me
+        </div>
         <div className="profile-container">
-          <div className="profile-card">
+          <div className="profile-card" data-aos="fade-up" data-aos-once="true">
             <img
               src="https://res.cloudinary.com/customzone-app/image/upload/v1671529642/WebImages/profile_s4h8hb.jpg"
               alt=""
             />
           </div>
-          <div className="profile-container-right">
+          <div className="profile-container-right" data-aos="fade-up">
             <h4>ADITYA SINGH</h4>
             <h4>B.E Data Science | Programming Enthusiast | Web developer</h4>
           </div>
         </div>
-        <div className="ab-des">
+        <div className="ab-des" data-aos="fade-up" data-aos-once="true">
           Hi there! My name is{" "}
           <span style={{ fontSize: "2rem", color: "orange" }}>
             Aditya Singh
@@ -67,34 +75,86 @@ const Aboutme = () => {
           am always looking for opportunities to collaborate and create amazing
           websites.
         </div>
-        <div className="title" style={{ color: "white" }}>
+        <div
+          className="title"
+          style={{ color: "white" }}
+          data-aos="fade-up"
+          data-aos-once="true"
+        >
           SKILLS
         </div>
-        <div className="skill-icons">
-          <div className="rounded-card" title="ReactJS">
+        <div className="skill-icons" data-aos-once="true">
+          <div
+            className="rounded-card"
+            title="ReactJS"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-once="true"
+          >
             <FaReact className="icon"></FaReact>
           </div>
-          <div className="rounded-card" title="NextJS">
+          <div
+            className="rounded-card"
+            title="NextJS"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-once="true"
+          >
             <TbBrandNextjs className="icon"></TbBrandNextjs>
           </div>
-          <div className="rounded-card" title="Java">
+          <div
+            className="rounded-card"
+            title="Java"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-once="true"
+          >
             <FaJava className="icon"></FaJava>
           </div>
-          <div className="rounded-card" title="MongoDB">
+          <div
+            className="rounded-card"
+            title="MongoDB"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-once="true"
+          >
             <DiMongodb className="icon"></DiMongodb>
           </div>
-          <div className="rounded-card" title="HTML">
+          <div
+            className="rounded-card"
+            title="HTML"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-once="true"
+          >
             <IoLogoHtml5 className="icon"></IoLogoHtml5>
           </div>
-          <div className="rounded-card" title="CSS">
+          <div
+            className="rounded-card"
+            title="CSS"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-once="true"
+          >
             <IoLogoCss3 className="icon"></IoLogoCss3>
           </div>
-          <div className="rounded-card" title="Javascript">
+          <div
+            className="rounded-card"
+            title="Javascript"
+            data-aos="fade-up"
+            data-aos-delay="700"
+            data-aos-once="true"
+          >
             <IoLogoJavascript className="icon"></IoLogoJavascript>
           </div>
         </div>
       </div>
-      <div className="footer">
+      <div
+        className="footer"
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-delay="800"
+      >
         <div className="innerdiv">
           <div className="container-footer">
             <div className="text">Having Any Project in Mind?</div>
