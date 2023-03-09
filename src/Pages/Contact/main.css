@@ -2,20 +2,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: auto;
+  height: 100%;
 }
 
 ::selection {
-  color: rgb(255, 255, 255);
-  background: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
 }
 
 .contact-left {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: row;
   font-family: "Average", serif;
   color: #eeeeee;
   margin-top: 2rem;
   margin-left: 9rem;
   text-align: left;
+  width: 25%;
+  height: 78vh;
 }
 
 .Mailcontact {
@@ -42,11 +48,15 @@
 }
 
 .contact-right {
-  margin-right: 5rem;
+  margin: 2rem 6rem 2rem 2rem;
   width: 33%;
   text-align: center;
   font-family: "Average", serif;
-  color: #a4a4a4;
+  color: #3b3b3b;
+  background-color: #383045;
+  height: 82vh;
+  border-radius: 2rem;
+  width: 50%;
 }
 
 .mailBtn {
@@ -75,10 +85,9 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #3c3434;
+  background-color: rgba(109, 109, 109, 0);
   width: 100%;
   margin: 1rem;
-  border-radius: 0.5rem;
 }
 
 .contact-heading {
@@ -89,8 +98,6 @@
 }
 
 .innerleft {
-  padding: 1rem;
-  margin: auto;
   width: 100%;
 }
 
@@ -104,106 +111,77 @@
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
-  height: 100%;
   padding: 1rem;
+  margin-left: 3rem;
+  margin-top: 1.4rem;
+  width: calc(100% - 5rem);
   transition: 0.2s ease-in-out all;
-  border-radius: 0 0 0.5rem 0.5rem;
 }
 
 .class-innersend:hover {
-  color: #ffffff;
-  background-color: #3c3434;
-  border: 1px solid #dedede;
+  color: #22133b;
+  transform: translateX(10);
 }
 
 .class-innersend > h4 {
   font-family: "Karla", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-right: 0.8rem;
+  color: #000000;
 }
 
 .inner-heading {
   color: #ffffff;
   font-family: "Josefin Sans", sans-serif;
-  text-align: center;
-  font-size: 2rem;
+  font-size: 2.9rem;
+  text-align: left;
+  padding: 1rem;
+  margin-left: 2rem;
+  line-height: 3.8rem;
+}
+
+.desc {
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  text-align: left;
+  padding-left: 1.1rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  line-height: normal;
 }
 
 .class-innersend svg {
   margin-bottom: 0.5rem;
-  font-size: 3rem;
-}
-
-.class-name {
-  display: grid;
-  place-items: center;
-  font-family: "Karla", sans-serif;
-  margin: 1rem 0 1rem 0;
-  height: 5rem;
-  background-color: #ffffff;
-  border-radius: 3rem;
-  padding: 1rem;
-  width: 100%;
-}
-
-.class-mail {
-  width: 100%;
-  display: grid;
-  place-items: center;
-  margin: 1rem 0 1rem 0;
-  height: 5rem;
-  font-family: "Karla", sans-serif;
-  font-size: 1rem;
-  background-color: #ffffff;
-  border-radius: 3rem;
-  padding: 1rem;
-  width: 100%;
-}
-
-.class-message {
-  width: 100%;
-  display: grid;
-  place-items: center;
-  padding: 1rem;
-  margin: 1rem 0 1rem 0;
-  height: 5rem;
-  font-family: "Karla", sans-serif;
-  border-radius: 3rem;
-  padding: 1rem;
-  width: 100%;
+  font-size: 2.5rem;
 }
 
 input {
-  width: 100%;
+  width: calc(100% - 5rem);
   display: grid;
   font-size: 1.5rem;
   place-items: center;
   padding: 1rem;
-  margin: 1rem 0 1rem 0;
+  margin: 3rem 0 1rem 3rem;
   height: 5rem;
   font-family: "Karla", sans-serif;
-  border-radius: 1rem;
-  width: 100%;
-  color: #000000;
+  color: #ffffff;
+  background-color: #ffffff00;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
 }
 
 ::placeholder {
-  color: #5f5f5f;
+  color: #a4a4a4;
 }
 
 input:focus,
 textarea:focus,
 select:focus {
-  color: #000000;
+  color: #ffffff;
   outline: none;
-}
-
-.or {
-  margin: 10rem 0 10rem 0;
-  display: flex;
-  color: #dedede;
-  justify-content: center;
-  font-size: 10rem;
 }
 
 .work-main {
@@ -216,11 +194,39 @@ select:focus {
   height: auto;
 }
 
+.left-socials {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.left-socials svg {
+  width: 3rem;
+  height: 3rem;
+  padding: 0 !important;
+  margin: 0 1rem 0 1rem;
+  transition: all ease-in-out 0.2s;
+}
+
+.social {
+  padding: 0 !important;
+}
+
+.left-socials svg:hover {
+  transform: scale(1.2);
+}
+
+.left-socials a {
+  all: unset;
+}
+
 @media only screen and (max-width: 600px) {
-  .contact-left {
-    font-family: "Average", serif;
-    color: #eeeeee;
-    margin: 10rem 0 0 0;
+  .contact-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
   }
 
   .contact-right {
@@ -228,62 +234,53 @@ select:focus {
     font-family: "Average", serif;
     color: #eeeeee;
     margin: 2rem 0 0 0;
-  }
-
-  .form-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #3c3434;
     width: 100%;
-    margin: 1rem;
-    border-radius: 0.5rem;
-  }
-
-  .or {
-    margin: 3rem 0 3rem 0;
-  }
-
-  .form-parent {
-    margin: 1rem;
   }
 
   input {
     width: 100%;
     display: grid;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     place-items: center;
+    padding: 1rem;
     margin: 1rem 0 1rem 0;
-    height: 3.3rem;
+    height: 5rem;
     font-family: "Karla", sans-serif;
-    background-color: #ffffff;
-    color: #000000;
+    color: #ffffff;
+    background-color: #ffffff00;
+    border: 1px solid #a4a4a4;
   }
 
   .Mailcontact {
     border-radius: 5rem;
-    background-color: #dedede;
-    width: auto;
+    background-color: #ffffff;
     padding: 2rem;
     transition: 0.2s ease-in-out all;
     color: #000000;
     letter-spacing: 0.2rem;
   }
 
+  .mailBtn {
+    margin-right: 1rem;
+    text-align: center;
+    font-family: "Average", serif;
+    width: 100%;
+  }
+
   .Mailcontact > h3 {
     font-family: "Josefin Sans", sans-serif;
-    margin: 0;
   }
 
   .contact-left {
-    margin-top: 4rem;
-    text-align: center;
-    font-size: 1rem;
+    font-family: "Average", serif;
+    color: #eeeeee;
+    text-align: left;
+    margin: 2rem auto 2rem auto;
   }
 
   .contact-left > h1 {
     font-size: 1.5rem;
+    text-align: center;
   }
 
   .contact-heading {
@@ -293,5 +290,27 @@ select:focus {
     font-size: 2.5rem;
     color: #dedede;
     margin: 1rem 0 1rem 0rem;
+  }
+
+  .class-innersend > h4 {
+    font-family: "Karla", sans-serif;
+    font-size: 1.5rem;
+    margin-right: 0.8rem;
+  }
+
+  .class-innersend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    height: 100%;
+    padding: 1rem;
+    color: #444444;
+    width: 45%;
+    transition: 0.2s ease-in-out all;
+  }
+
+  .class-innersend:hover {
+    color: #f7ba10;
   }
 }

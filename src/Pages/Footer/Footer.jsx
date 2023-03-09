@@ -1,9 +1,9 @@
 import React from "react";
-import "./css/Footer/main.css";
+import "./main.css";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsInstagram } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
-import Sign from "./assets/signature.png";
+import Sign from "../../assets/signature.png";
 
 const Footer = () => {
   return (
