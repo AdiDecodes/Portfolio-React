@@ -11,6 +11,7 @@ import "aos/dist/aos.css";
 const Work = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
+    window.scrollTo(0, 0);
   }, []);
 
   return (

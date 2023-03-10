@@ -14,6 +14,7 @@ import { useEffect } from "react";
 const Aboutme = () => {
   useEffect(() => {
     AOS.init({ duration: 1500 });
+    window.scrollTo(0, 0);
   }, []);
   let navigate = useNavigate();
   return (
@@ -153,32 +154,63 @@ const Aboutme = () => {
         className="footer"
         data-aos="fade-up"
         data-aos-once="true"
-        data-aos-delay="800"
+        data-aos-delay="500"
       >
         <div className="innerdiv">
           <div className="container-footer">
-            <div className="text">Having Any Project in Mind?</div>
+            <div
+              className="text"
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-delay="500"
+            >
+              Having Any Project in Mind?
+            </div>
             <div
               onClick={() => {
                 navigate("/contact");
               }}
               className="push-button"
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-delay="500"
             >
               Drop a 'Hello'
             </div>
           </div>
           <div className="social">
             <a href="https://instagram.com/_.adityyaa" target="!blank">
-              <div className="social-icon">Instagram</div>
+              <div
+                className="social-icon"
+                data-aos="fade-up"
+                data-aos-once="true"
+                data-aos-delay="500"
+              >
+                Instagram
+              </div>
             </a>
             <a
               href="https://www.linkedin.com/in/singhaditya18/"
               target="!blank"
             >
-              <div className="social-icon">LinkedIn</div>
+              <div
+                className="social-icon"
+                data-aos="fade-up"
+                data-aos-once="true"
+                data-aos-delay="500"
+              >
+                LinkedIn
+              </div>
             </a>
             <a href="https://github.com/AdiDecodes" target="!blank">
-              <div className="social-icon">Github</div>
+              <div
+                className="social-icon"
+                data-aos="fade-up"
+                data-aos-once="true"
+                data-aos-delay="500"
+              >
+                Github
+              </div>
             </a>
           </div>
         </div>

@@ -6,8 +6,15 @@ import {
   AiOutlineInstagram,
   AiOutlineLinkedin,
 } from "react-icons/ai";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect } from "react";
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({ duration: 750 });
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <div className="mainHeader">
@@ -24,7 +31,7 @@ const Contact = () => {
       </div>
       <div className="contact-main">
         <div className="contact-left">
-          <div className="left-socials">
+          <div className="left-socials" data-aos="fade-up" data-aos-once="true">
             <div className="social">
               <a href="https://www.instagram.com/_.adityyaa/" target="!blank">
                 <AiOutlineInstagram />
@@ -45,7 +52,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="contact-right">
+        <div className="contact-right" data-aos="fade-up" data-aos-once="true">
           <div className="form-parent">
             <div className="form-main">
               <div className="innerleft">
